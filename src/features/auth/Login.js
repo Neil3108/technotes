@@ -19,6 +19,10 @@ const Login = () => {
   const errClass = errMsg ? "errmsg" : "offscreen"
   const [persist, setPersist] = usePersist()
 
+
+  console.log(username)
+  console.log(password)
+  
   useEffect(() =>{
     userRef.current.focus()
   }, [])
