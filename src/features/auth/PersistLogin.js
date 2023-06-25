@@ -7,7 +7,7 @@ import { selectCurrentToken } from "./authSlice";
 import PulseLoader from 'react-spinners/PulseLoader'
 
 const PersistLogin = () => {
-
+    console.log("Reached the start of PersistLogin.js")
     const [persist] = usePersist()
     const token = useSelector(selectCurrentToken)
     const effectRan = useRef(false)
