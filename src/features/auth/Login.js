@@ -55,9 +55,6 @@ const Login = () => {
   const handleToggle = () => setPersist(prev => !prev)
   console.log("Reached the line 54")
 
-  if (isLoading)
-    return <PulseLoader color = {"#FFF"} />
-
   console.log("Reached the line 59")
   const content = (
     <section className="public">
