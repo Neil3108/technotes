@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 
 const Prefetch = () => {
-
+    console.log("Reached the start of Prefetch.js")
     useEffect(() => {
         store.dispatch(notesApiSlice.util.prefetch('getNotes', 'notesList', { force: true }))
         store.dispatch(notesApiSlice.util.prefetch('getUsers', 'usersList', { force: true }))
