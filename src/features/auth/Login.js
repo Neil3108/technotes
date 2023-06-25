@@ -18,10 +18,6 @@ const Login = () => {
   const [login, { isLoading }] = useLoginMutation()
   const errClass = errMsg ? "errmsg" : "offscreen"
   const [persist, setPersist] = usePersist()
-
-
-  console.log(username)
-  console.log(password)
   
   useEffect(() =>{
     userRef.current.focus()
@@ -108,8 +104,8 @@ const Login = () => {
         </footer>
     </section>
 )
-
-
+    
+  console.log("Reached the end of Login.js")
   return content
 }
 export default Login

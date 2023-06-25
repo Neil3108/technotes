@@ -4,6 +4,7 @@ import { useNavigate, useLocation } from 'react-router-dom'
 import useAuth from "../hooks/useAuth"
 
 const DashFooter = () => {
+    console.log("Reached the start of Footer.js")
     const { username, status } = useAuth()
     const navigate = useNavigate()
     const { pathname } = useLocation()
