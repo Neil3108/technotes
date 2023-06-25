@@ -35,7 +35,6 @@ const Login = () => {
       setUsername('')
       setPassword('')
       navigate('/dash')
-      console.log("Reached the line 38")
 
     }
     catch (err) {
@@ -53,9 +52,7 @@ const Login = () => {
   const handleUserInput = (e) => setUsername(e.target.value)
   const handlePwdInput = (e) => setPassword(e.target.value)
   const handleToggle = () => setPersist(prev => !prev)
-  console.log("Reached the line 54")
   if (isLoading) return <PulseLoader color={"#FFF"} />
-  console.log("Reached the line 59")
   const content = (
     <section className="public">
         <header>
@@ -105,8 +102,6 @@ const Login = () => {
         </footer>
     </section>
 )
-    
-  console.log("Reached the end of Login.js")
   return content
 }
 export default Login

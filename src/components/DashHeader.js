@@ -10,7 +10,6 @@ const NOTES_REGEX = /^\/dash\/notes(\/)?$/
 const USERS_REGEX = /^\/dash\/users(\/)?$/
 
 const DashHeader = () => {
-    console.log("Reached the start of Header.js")
     const { isManager, isAdmin } = useAuth()
 
     const navigate = useNavigate()

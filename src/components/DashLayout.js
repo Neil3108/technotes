@@ -3,7 +3,6 @@ import DashHeader from './DashHeader'
 import DashFooter from './DashFooter'
 
 const DashLayout = () => {
-    console.log("Reached the start of Layout.js")
     return (
         <>
             <DashHeader />
