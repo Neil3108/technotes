@@ -24,9 +24,10 @@ function App() {
 
         <Route index element={<Public />} />  {/* Home page (Public)*/}
         <Route path="login" element={<Login />} /> {/* Login page (Public)*/}
-
+        <script>console.log("Above the PresitLogin Call")</script>
         {/* Start of Private routes*/}
         <Route element={<PersistLogin />}>
+        <script>console.log("Below the PresitLogin Call")</script>
         <Route element={<RequireAuth allowedRoles={[...Object.values(ROLES)]}/>}>
             <Route element={<Prefetch />}>
               <Route path="dash" element={<DashLayout />}> {/* Dash page (Private)*/}
