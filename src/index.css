@@ -127,6 +127,8 @@ a:focus-visible {
 .public__addr {
   margin-top: 1em;
   color: black;
+  font-weight: 700;
+  font-size: x-large;
 }
 
 .welcome a::before {
@@ -374,5 +376,8 @@ tr {
 
   .titleColor {
     color: #000;
+    font-style: bold;
+    font-size: x-large;
+    font-weight: 700;
   }
 }

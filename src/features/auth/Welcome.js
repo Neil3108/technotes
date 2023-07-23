@@ -9,15 +9,15 @@ const Welcome = () => {
     const content = (
         <section className="welcome">
 
-            <p>{today}</p>
+            <p className='titleColor'>{today}</p>
 
             <h1 className='titleColor'>Welcome {username}!</h1>
 
-            <p><Link to="/dash/notes"> View Current Auto Notes </Link></p>
-            <p><Link to="/dash/notes/new"> Add Auto New Notes </Link></p>
+            <p className='titleColor'><Link to="/dash/notes"> View Current Auto Notes </Link></p>
+            <p className='titleColor'><Link to="/dash/notes/new"> Add Auto New Notes </Link></p>
 
-            {(isManager || isAdmin) && <p><Link to="/dash/users">View User Settings</Link></p>}
-            {(isManager || isAdmin) && <p><Link to="/dash/users/new"> Add New User </Link></p>}
+            {(isManager || isAdmin) && <p className='titleColor'><Link to="/dash/users">View User Settings</Link></p>}
+            {(isManager || isAdmin) && <p className='titleColor'><Link to="/dash/users/new"> Add New User </Link></p>}
 
         </section>
     )
