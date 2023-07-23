@@ -67,7 +67,6 @@
 body {
   font-family: 'Nunito', sans-serif;
   min-height: 100vh;
-  background-color: var(--BGCOLOR);
   color: var(--COLOR);
   background-image: url('./img/background.jpeg');
   background-size: cover;
@@ -120,13 +119,14 @@ a:focus-visible {
 .public__main,
 .login {
   flex-grow: 1;
-  border-top: 2px solid var(--BORDER-COLOR);
-  border-bottom: 2px solid var(--BORDER-COLOR);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
   padding: 1em 0;
 }
 
 .public__addr {
   margin-top: 1em;
+  color: black;
 }
 
 .welcome a::before {
@@ -370,5 +370,9 @@ tr {
 
   .form__action-buttons {
     position: static;
+  }
+
+  .titleColor {
+    color: #000;
   }
 }
