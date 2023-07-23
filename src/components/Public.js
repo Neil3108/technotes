@@ -4,18 +4,18 @@ const Public = () => {
     const content = (
         <section className="public">
             <header>
-                <h1>Welcome to <span className="nowrap">Dan D. Repairs!</span></h1>
+                <h1>Welcome to <span className="nowrap">Winnipeg Auto Shop!</span></h1>
             </header>
             <main className="public__main">
-                <p>Located in Beautiful Downtown Foo City, Dan D. Repairs  provides a trained staff ready to meet your tech repair needs.</p>
+                <p>Located in South Winnipeg, close to University of Manitoba.</p>
                 <address className="public__addr">
-                    Dan D. Repairs<br />
-                    555 Foo Drive<br />
-                    Foo City, CA 12345<br />
-                    <a href="tel:+15555555555">(555) 555-5555</a>
+                    Winnipeg Auto Shop<br />
+                    1234 University Drive<br />
+                    Winnipeg, MB, R3T 4X6<br />
+                    <a href="tel:+12049601111">(204) 960-1111</a>
                 </address>
                 <br />
-                <p>Owner: Dan Davidson</p>
+                <p>Owner: Prakhar Sharma</p>
             </main>
             <footer>
                 <Link to="/login">Employee Login</Link>

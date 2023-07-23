@@ -47,7 +47,7 @@ const NewUserForm = () => {
 
     const onRolesChanged = e => {
         const values = Array.from(
-            e.target.selectedOptions, //HTMLCollection 
+            e.target.selectedOptions,
             (option) => option.value
         )
         setRoles(values)
